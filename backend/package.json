@@ -1,14 +1,14 @@
 {
-  "name": "cando-education-backend",
+  "name": "cando",
   "version": "1.0.0",
-  "main": "server.js",
+  "description": "Educational platform Cando",
+  "main": "backend/server.js",
   "scripts": {
-    "start": "node server.js",
-    "build": "cd ../frontend && npm install && npm run build"
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "build": "cd frontend && npm install && npm run build",
+    "start": "cd backend && node server.js"
   },
-  "dependencies": {
-    "cors": "^2.8.5",
-    "express": "^4.18.2",
-    "socket.io": "^4.7.2"
+  "engines": {
+    "node": "18.x"
   }
 }
